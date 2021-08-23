@@ -35,3 +35,14 @@ gsap.from(".header-container > div", {
   delay: 2,
   duration: 2.5,
 });
+
+const menubtn = document.querySelector(".menu-toggle");
+const menudiv = document.querySelector(".header--nav");
+const images = document.querySelector(".images");
+const centerbar = document.querySelector(".centerbar");
+menubtn.addEventListener("click", () => {
+  console.log("hello");
+  menudiv.classList.toggle("nav-js");
+  images.classList.toggle("hide");
+  centerbar.classList.toggle("hide");
+});
